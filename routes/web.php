@@ -13,9 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('Home', function () {
-    return view('Dashboard');
-});
+
+
+
+
+//Rutas Roberto Inicia linea 20
+Route::get('/', function () {return view('welcome');});
+Route::get('Home', function () {return view('Dashboard');});
+Route::get('SPC', function() {return view('SPC/supervicionCorte');});
+Route::get('SPAR', function(){return view('SPAR/supervicionReparto');});
+
+
+
+
+
+
+
+
+
+
+//Rutas Finaliza linea 40
