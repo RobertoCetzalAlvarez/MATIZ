@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProxyController;
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RoleController;
@@ -19,11 +20,34 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+
+
+
+
+//Rutas Roberto Inicia linea 20
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('SPC', function() {return view('SPC/supervicionCorte');});
+Route::get('SPAR', function(){return view('SPAR/supervicionReparto');});
+Route::get('/proxy', [ProxyController::class, 'proxy']);
+
+
+
+
+
+
+
+
+
+
+
+
+//Rutas Finaliza linea 40
+//inicia lineas de Codigo Miguel Linea 41
 Route::get('Home', function () {
     return view('Dashboard');
+<<<<<<< HEAD
 });
 
 Auth::routes();
@@ -34,4 +58,6 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RoleController::class);
     Route::resource('users', UserController::class);
     Route::resource('products', ProductController::class);
+=======
+>>>>>>> c95d8263f81060ac7b9984fbaf64985be55c429a
 });
