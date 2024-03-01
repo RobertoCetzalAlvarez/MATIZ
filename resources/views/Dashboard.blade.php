@@ -1,3 +1,26 @@
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <!-- <div class="card">
+                <div class="card-header">{{ __('Dashboard') }}</div>
+
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    {{ __('You are logged in!') }}
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,15 +40,15 @@
     <header id="carrusel-contenido">
         <div id="carrusel-caja">
             <div class="carrusel-elemento">
-                <img class="imagenes" href="" src="img/carrusel.jpg" >
+                <img class="imagenes" href="" src="/img/carrusel.jpg" >
             </div>
 
             <div class="carrusel-elemento">   
-                <img class="imagenes" href="" src="img/carrusel1.jpg">
+                <img class="imagenes" href="" src="/img/carrusel1.jpg">
             </div>
 
             <div class="carrusel-elemento">   
-                <img class="imagenes" href="" src="img/carrusel.jpg">                        
+                <img class="imagenes" href="" src="/img/carrusel.jpg">                        
             </div>
 
         </div>
@@ -59,3 +82,4 @@
     <input type="hidden" name="route" value="{{url('/')}}">
 </body>
 </html>
+@endsection
