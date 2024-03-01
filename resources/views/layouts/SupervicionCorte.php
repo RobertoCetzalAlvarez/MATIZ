@@ -72,7 +72,7 @@ crossorigin="use-credentials">
                         <div class="col-lg-12">
                             <div class="navbar-header">
 
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <button type="button" class="navbar-toggle" @click="home" data-toggle="collapse" data-target=".navbar-collapse">
                                     <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                                 </button>
                             </div>
@@ -124,10 +124,38 @@ crossorigin="use-credentials">
                 <div class="rowJAR">
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
+                        <!-- <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skip-backward" viewBox="0 0 16 16">
+                            <path d="M.5 3.5A.5.5 0 0 1 1 4v3.248l6.267-3.636c.52-.302 1.233.043 1.233.696v2.94l6.267-3.636c.52-.302 1.233.043 1.233.696v7.384c0 .653-.713.998-1.233.696L8.5 8.752v2.94c0 .653-.713.998-1.233.696L1 8.752V12a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m7 1.133L1.696 8 7.5 11.367zm7.5 0L9.196 8 15 11.367z"></path>
+                            </svg>
+                             Button
+                        </button> -->
 
+                             <li class="dropdown">  
+                                <a   src="/Home" @click="/Home" href="/Home">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skip-backward" viewBox="0 0 16 16">
+                                    <path d="M.5 3.5A.5.5 0 0 1 1 4v3.248l6.267-3.636c.52-.302 1.233.043 1.233.696v2.94l6.267-3.636c.52-.302 1.233.043 1.233.696v7.384c0 .653-.713.998-1.233.696L8.5 8.752v2.94c0 .653-.713.998-1.233.696L1 8.752V12a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m7 1.133L1.696 8 7.5 11.367zm7.5 0L9.196 8 15 11.367z"/>
+                                </svg>
+                            
+                            </i>&nbsp;Home&nbsp;</a>
+                            </li>
+                            <!-- <li>
+                            <a href="Home">
+                            <button type="button" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skip-backward" viewBox="0 0 16 16">
+                            <path d="M.5 3.5A.5.5 0 0 1 1 4v3.248l6.267-3.636c.52-.302 1.233.043 1.233.696v2.94l6.267-3.636c.52-.302 1.233.043 1.233.696v7.384c0 .653-.713.998-1.233.696L8.5 8.752v2.94c0 .653-.713.998-1.233.696L1 8.752V12a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m7 1.133L1.696 8 7.5 11.367zm7.5 0L9.196 8 15 11.367z"></path>
+                            </svg>
+                            </button>
+                            </a>
+                            </li> -->
+                            
 
                             <li class="dropdown">  
-                                <a id="cortes" class="dropdown-toggle" data-toggle="dropdown" href="http://10.19.147.80/superac/index.aspx#"><i style="font-size:x-large" class="fa fa-fw fa-cut"></i>&nbsp;Supervisión de Cortes&nbsp;<span class="caret"></span></a>
+                                <a id="cortes" class="dropdown-toggle" data-toggle="dropdown" href="http://10.19.147.80/superac/index.aspx#">
+                                <svg xmlns="svg/scissors" width="16" height="16" fill="currentColor" class="bi bi-scissors" viewBox="0 0 16 16">
+                                 <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0m7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+                                </svg></i>&nbsp;Supervisión de Cortes&nbsp;<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="http://10.19.147.80/superac/CortesCaptura_ConBusqueda.aspx" target="contenido">Captura de Info.</a></li>
                                     <li><a href="http://10.4.17.1/sicossweb/solhom.html" target="contenido">Solicitudes Homonimos</a></li>
